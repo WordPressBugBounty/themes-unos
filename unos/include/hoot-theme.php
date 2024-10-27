@@ -35,16 +35,17 @@ function unos_includes() {
 	require_once( hoot_data()->incdir . 'admin/menus.php' );
 	/* Set sidebars */
 	require_once( hoot_data()->incdir . 'admin/sidebars.php' );
-	/* Load TGMPA Class */
-	if ( apply_filters( 'unos_load_tgmpa', file_exists( hoot_data()->incdir . 'admin/class-tgm-plugin-activation.php' ) ) )
-		require_once( hoot_data()->incdir . 'admin/class-tgm-plugin-activation.php' );
+	/* Helper Functions */
+	require_once( hoot_data()->incdir . 'admin/functions.php' );
 	/* Load Customizer Options */
 	if ( apply_filters( 'unos_customize_load_trt', file_exists( hoot_data()->incdir . 'admin/trt-customize-pro/class-customize.php' ) ) )
 		require_once( hoot_data()->incdir . 'admin/trt-customize-pro/class-customize.php' );
 	require_once( hoot_data()->incdir . 'admin/customizer-options.php' );
 	/* Load the about page. */
-	if ( apply_filters( 'unos_load_about', file_exists( hoot_data()->incdir . 'admin/about.php' ) ) )
+	if ( apply_filters( 'unos_load_about', ( file_exists( hoot_data()->incdir . 'admin/about.php' ) && file_exists( hoot_data()->incdir . 'admin/notice.php' ) ) ) ) {
 		require_once( hoot_data()->incdir . 'admin/about.php' );
+		require_once( hoot_data()->incdir . 'admin/notice.php' );
+	}
 	/* Load the theme setup file */
 	require_once( hoot_data()->incdir . 'theme-setup.php' );
 	require_once( hoot_data()->incdir . 'blocks/wpblocks.php' );
@@ -78,7 +79,7 @@ function unos_transition_get_mods( $mods ) {
 			$mods['menu_location'] = $secondary_menu_location;
 			$mods['logo_side'] = $primary_menuarea;
 		}
-		$mods['fullwidth_menu_align'] = $mods['secondary_menu_align'];
+		$mods['fullwidth_menu_align'] = $secondary_menu_align;
 
 		set_theme_mod( 'menu_location', $mods['menu_location'] );
 		set_theme_mod( 'logo_side', $mods['logo_side'] );

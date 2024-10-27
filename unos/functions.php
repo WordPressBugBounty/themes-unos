@@ -46,3 +46,4 @@ require_once( $hoot_template_dir . 'library/init.php' );
 
 // Load up the Theme files
 require_once( $hoot_template_dir . 'include/hoot-theme.php' );
+

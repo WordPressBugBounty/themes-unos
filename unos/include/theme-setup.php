@@ -71,13 +71,32 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 
-/** One click demo import **/
+/** Hoot Import plugin **/
 
-// Disable branding
-add_filter( 'pt-ocdi/disable_pt_branding', 'unos_disable_pt_branding' );
-function unos_disable_pt_branding() {
-	return true;
+// theme config
+if ( ! function_exists( 'unos_hootimport_theme_config' ) ) {
+	function unos_hootimport_theme_config( $config ) {
+		$child = hoot_data( 'childtheme_name' );
+		$is_official_child = false;
+		if ( $child ) {
+			$checks = apply_filters( 'unos_hootimport_theme_config_childtheme_array', array( 'Unos Publisher', 'Unos Magazine Vu', 'Unos Business', 'Unos Glow',  'Unos Magazine Black', 'Unos Store Bell', 'Unos Minima Store','Unos News', 'Unos BizDeck' ) );
+			foreach ( $checks as $check ) {
+				if ( stripos( $child, $check ) !== false ) {
+					$is_official_child = true;
+					break;
+				}
+			}
+		}
+		return ( $is_official_child ) ? $config : array_merge( $config, array(
+			'id' => 'unos', // *required // used for parent and unofficial child themes
+			'menu_title' => __( 'Import Unos Demo', 'unos' ),
+			'theme_name' => hoot_get_data( 'template_name' ),
+			'theme_version' => hoot_get_data( 'template_version' ),
+			'theme_img' => ( function_exists( 'unos_abouttag' ) ? unos_abouttag( 'fullshot' ) : '' ),
+		) );
+	}
 }
+add_filter( 'hootimport_theme_config', 'unos_hootimport_theme_config', 5 );
 
 
 /* === Hootkit Plugin === */
@@ -215,39 +234,3 @@ function unos_custom_excerpt_length( $length ) {
 	return 50;
 }
 add_filter( 'excerpt_length', 'unos_custom_excerpt_length', 999 );
-
-/**
- * Register recommended plugins via TGMPA
- *
- * @since 1.0
- * @return void
- */
-function unos_tgmpa_plugins() {
-	// Array of plugin arrays. Required keys are name and slug.
-	// Since source is from the .org repo, it is not required.
-	$plugins = array(
-		array(
-			'name'     => __( '(HootKit) Unos Sliders, Widgets', 'unos' ),
-			'slug'     => 'hootkit',
-			'required' => false,
-		),
-	);
-
-	// $wpv = get_bloginfo( 'version' );
-	// if ( version_compare( $wpv, '5.8', '>=' ) ) {
-	// 	$plugins[] = array(
-	// 		'name'     => __( 'Classic Widgets', 'unos' ),
-	// 		'slug'     => 'classic-widgets',
-	// 		'required' => false,
-	// 	);
-	// }
-	$plugins = apply_filters( 'unos_tgmpa_plugins', $plugins );
-
-	// Array of configuration settings.
-	$config = array(
-		'is_automatic' => true,
-	);
-	// Register plugins with TGM_Plugin_Activation class
-	tgmpa( $plugins, $config );
-}
-add_filter( 'tgmpa_register', 'unos_tgmpa_plugins' );
