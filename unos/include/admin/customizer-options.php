@@ -681,7 +681,7 @@ function unos_customizer_options() {
 		'section'     => $section,
 		'type'        => 'checkbox',
 		'default'     => 0,
-		'description' => esc_html__( 'Enable this to load Google Fonts (if used) from your own site instead of Google servers.', 'unos' ),
+		'description' => esc_html__( 'Enable this to load Google Fonts (if used) from your own site instead of Google servers. This is required for GDPR compliance for EU visitors.', 'unos' ),
 		'priority'    => 205,
 	);
 
@@ -923,10 +923,11 @@ function unos_customizer_options() {
 					'transport' => 'postMessage',
 				),
 				'parallax' => array(
-					'label'   => esc_html__( 'Apply Parallax Effect to Background Image', 'unos' ),
+					'label'   => esc_html__( 'Apply Parallax Effect to Background Image (preview not available in Customizer)', 'unos' ),
 					'type'    => 'checkbox',
 					// 'default' => 1,
 					// 'default' => ( ( $fpgmodid == 'area_b' ) ? 1 : 0 ),
+					'transport' => 'postMessage', // Do nothing in customizer - preview not available for parallax!
 				),
 				'font' => array(
 					'label'   => esc_html__( 'Font Color', 'unos' ),
@@ -1395,7 +1396,7 @@ function unos_customize_dynamic_cssrules() {
 									  '.site-title-line em',
 									  '.more-link, .more-link a',
 									  '.more-link:hover, .more-link:hover a', // brevity : replaced by newvaldark in js
-									  '.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover',
+									  '.wc-block-components-button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover',
 									  '.topbanner-content mark',
 									  '.slider-style2 .lSAction > a:hover',
 									  '.widget .viewall a:hover',
@@ -1405,7 +1406,7 @@ function unos_customize_dynamic_cssrules() {
 			'border-color'	=> array( 'body.wordpress input[type="submit"], body.wordpress #submit, body.wordpress .button',
 									  '#site-logo.logo-border',
 									  '.menu-tag',
-									  '.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt',
+									  '.wc-block-components-button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt',
 									  '.lSSlideOuter ul.lSPager.lSpg > li a',
 									  '.slider-style2 .lSAction > a',
 									  '.icon-style-circle',
@@ -1421,7 +1422,7 @@ function unos_customize_dynamic_cssrules() {
 									  // '.widget_newsletterwidget input.tnp-submit[type=submit], .widget_newsletterwidgetminimal input.tnp-submit[type=submit]',
 									  '.widget_breadcrumb_navxt .breadcrumbs > .hoot-bcn-pretext',
 									  '.woocommerce div.product .woocommerce-tabs ul.tabs li:hover' . ',' . '.woocommerce div.product .woocommerce-tabs ul.tabs li.active',
-									  '.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt',
+									  '.wc-block-components-button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt',
 									  '.lSSlideOuter ul.lSPager.lSpg > li:hover a, .lSSlideOuter ul.lSPager.lSpg > li.active a',
 									  '.lightSlider .wrap-light-on-dark .hootkitslide-head, .lightSlider .wrap-dark-on-light .hootkitslide-head',
 									  '.slider-style2 .lSAction > a',
@@ -1447,7 +1448,7 @@ function unos_customize_dynamic_cssrules() {
 									  // '.widget_newsletterwidget input.tnp-submit[type=submit], .widget_newsletterwidgetminimal input.tnp-submit[type=submit]',
 									  '.widget_breadcrumb_navxt .breadcrumbs > .hoot-bcn-pretext',
 									  '.woocommerce div.product .woocommerce-tabs ul.tabs li:hover a, .woocommerce div.product .woocommerce-tabs ul.tabs li:hover a:hover' . ',' . '.woocommerce div.product .woocommerce-tabs ul.tabs li.active a',
-									  '.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt',
+									  '.wc-block-components-button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt',
 									  '.lightSlider .wrap-light-on-dark .hootkitslide-head, .lightSlider .wrap-dark-on-light .hootkitslide-head',
 									  '.slider-style2 .lSAction > a',
 									  '.sidebar .view-all-top.view-all-withtitle a, .sub-footer .view-all-top.view-all-withtitle a, .footer .view-all-top.view-all-withtitle a, .sidebar .view-all-top.view-all-withtitle a:hover, .sub-footer .view-all-top.view-all-withtitle a:hover, .footer .view-all-top.view-all-withtitle a:hover', // @deprecated <= HootKit v1.1.0 @5.20 view-all
@@ -1455,7 +1456,7 @@ function unos_customize_dynamic_cssrules() {
 									),
 			'background'	=> array( '.invert-accent-typo',
 									  'body.wordpress input[type="submit"]:hover, body.wordpress #submit:hover, body.wordpress .button:hover, body.wordpress input[type="submit"]:focus, body.wordpress #submit:focus, body.wordpress .button:focus',
-									  '.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover',
+									  '.wc-block-components-button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover',
 									  '.slider-style2 .lSAction > a:hover',
 									  '.widget .viewall a:hover',
 									),

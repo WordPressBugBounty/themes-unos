@@ -38,7 +38,7 @@ add_theme_support( 'custom-header', array(
 	'flex-height' => true,
 	'flex-width' => true,
 	'default-image' => hoot_data()->template_uri . 'images/header.jpg',
-	'header-text' => false
+	'header-text' => true
 ) );
 
 // Adds theme support for WordPress 'featured images'.

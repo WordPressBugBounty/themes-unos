@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Unos\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-26 22:07+0530\n"
+"POT-Creation-Date: 2025-01-22 13:21+0530\n"
 "PO-Revision-Date: 2021-07-08 00:29+0530\n"
 "Last-Translator: wpHoot <admin@wphoot.com>\n"
 "Language-Team: wpHoot <admin@wphoot.com>\n"
@@ -634,7 +634,7 @@ msgstr ""
 #: ../include/admin/customizer-options.php:461
 #: ../include/admin/customizer-options.php:478
 #: ../include/admin/customizer-options.php:901
-#: ../include/admin/customizer-options.php:983 ../library/enum.php:287
+#: ../include/admin/customizer-options.php:984 ../library/enum.php:287
 msgid "None"
 msgstr ""
 
@@ -810,7 +810,7 @@ msgid "Load webfonts locally"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:684
-msgid "Enable this to load Google Fonts (if used) from your own site instead of Google servers."
+msgid "Enable this to load Google Fonts (if used) from your own site instead of Google servers. This is required for GDPR compliance for EU visitors."
 msgstr ""
 
 #: ../include/admin/customizer-options.php:689
@@ -1040,266 +1040,266 @@ msgid "Background Image (Select 'Image' above)"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:926
-msgid "Apply Parallax Effect to Background Image"
+msgid "Apply Parallax Effect to Background Image (preview not available in Customizer)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:932
+#: ../include/admin/customizer-options.php:933
 msgid "Font Color"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:935
+#: ../include/admin/customizer-options.php:936
 msgid "Default Theme Color"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:936
+#: ../include/admin/customizer-options.php:937
 msgid "Custom Font Color"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:937
+#: ../include/admin/customizer-options.php:938
 msgid "Force Custom Font Color"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:943
+#: ../include/admin/customizer-options.php:944
 msgid "Custom Font Color (select 'Custom Font Color' above)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:959
+#: ../include/admin/customizer-options.php:960
 msgid "Archives (Blog, Cats, Tags)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:964
+#: ../include/admin/customizer-options.php:965
 msgid "Archive (Blog) Layout"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:979
+#: ../include/admin/customizer-options.php:980
 msgid "Post Items Content"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:984
+#: ../include/admin/customizer-options.php:985
 msgid "Post Excerpt"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:985
+#: ../include/admin/customizer-options.php:986
 msgid "Full Post Content"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:988
+#: ../include/admin/customizer-options.php:989
 msgid "Content to display for each post in the list"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:993
+#: ../include/admin/customizer-options.php:994
 msgid "Meta Information for Post List Items"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:994
+#: ../include/admin/customizer-options.php:995
 msgid "Check which meta information to display for each post item in the archive list."
-msgstr ""
-
-#: ../include/admin/customizer-options.php:998
-#: ../include/admin/customizer-options.php:1102
-#: ../include/admin/customizer-options.php:1125 ../template-parts/comment.php:8
-msgid "Author"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:999
 #: ../include/admin/customizer-options.php:1103
-#: ../include/admin/customizer-options.php:1126
-msgid "Date"
+#: ../include/admin/customizer-options.php:1126 ../template-parts/comment.php:8
+msgid "Author"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:1000
 #: ../include/admin/customizer-options.php:1104
-msgid "Categories"
+#: ../include/admin/customizer-options.php:1127
+msgid "Date"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:1001
 #: ../include/admin/customizer-options.php:1105
-msgid "Tags"
+msgid "Categories"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:1002
 #: ../include/admin/customizer-options.php:1106
-#: ../include/admin/customizer-options.php:1127
+msgid "Tags"
+msgstr ""
+
+#: ../include/admin/customizer-options.php:1003
+#: ../include/admin/customizer-options.php:1107
+#: ../include/admin/customizer-options.php:1128
 msgid "No. of comments"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1016
+#: ../include/admin/customizer-options.php:1017
 msgid "Excerpt Length"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1019
+#: ../include/admin/customizer-options.php:1020
 msgid "Number of words in excerpt. Default is 50. Leave empty if you dont want to change it."
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1021
+#: ../include/admin/customizer-options.php:1022
 msgid "default: 50"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1027
+#: ../include/admin/customizer-options.php:1028
 msgid "'Continue Reading' Text"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1030
+#: ../include/admin/customizer-options.php:1031
 msgid "Replace the default 'Continue Reading' text. Leave empty if you dont want to change it."
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1032
+#: ../include/admin/customizer-options.php:1033
 msgid "default: Continue Reading"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1034 ../include/theme-setup.php:215
+#: ../include/admin/customizer-options.php:1035 ../include/theme-setup.php:215
 msgid "Continue Reading"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1044
+#: ../include/admin/customizer-options.php:1045
 msgid "Single (Posts, Pages)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1049
+#: ../include/admin/customizer-options.php:1050
 msgid "Stretch Page Title Area to Full Width"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1054
+#: ../include/admin/customizer-options.php:1055
 msgid "Default (Archives, Blog, Woocommerce etc.)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1055
+#: ../include/admin/customizer-options.php:1056
 msgid "For All Posts"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1056
+#: ../include/admin/customizer-options.php:1057
 msgid "For All Pages"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1057
+#: ../include/admin/customizer-options.php:1058
 msgid "Always override for full width pages (any page which has no sidebar)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1060
+#: ../include/admin/customizer-options.php:1061
 msgid "This is the Page Header area containing Page/Post Title and Meta details like author, categories etc."
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1065
+#: ../include/admin/customizer-options.php:1066
 msgid "Display Featured Image (Post)"
-msgstr ""
-
-#: ../include/admin/customizer-options.php:1069
-#: ../include/admin/customizer-options.php:1085
-msgid "Do not display"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:1070
 #: ../include/admin/customizer-options.php:1086
-msgid "Header Background (No Cropping)"
+msgid "Do not display"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:1071
 #: ../include/admin/customizer-options.php:1087
-msgid "Header Background (Cropped)"
+msgid "Header Background (No Cropping)"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:1072
 #: ../include/admin/customizer-options.php:1088
-msgid "Header Background (Parallax Effect)"
+msgid "Header Background (Cropped)"
 msgstr ""
 
 #: ../include/admin/customizer-options.php:1073
 #: ../include/admin/customizer-options.php:1089
+msgid "Header Background (Parallax Effect)"
+msgstr ""
+
+#: ../include/admin/customizer-options.php:1074
+#: ../include/admin/customizer-options.php:1090
 msgid "Beginning of content"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1076
+#: ../include/admin/customizer-options.php:1077
 msgid "Display featured image on a Post page."
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1081
+#: ../include/admin/customizer-options.php:1082
 msgid "Display Featured Image (Page)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1092
+#: ../include/admin/customizer-options.php:1093
 msgid "Display featured image on a 'Page' page."
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1097
+#: ../include/admin/customizer-options.php:1098
 msgid "Meta Information on Posts"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1098
+#: ../include/admin/customizer-options.php:1099
 msgid "Check which meta information to display on an individual 'Post' page"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1120
+#: ../include/admin/customizer-options.php:1121
 msgid "Meta Information on Page"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1121
+#: ../include/admin/customizer-options.php:1122
 msgid "Check which meta information to display on an individual 'Page' page"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1141
+#: ../include/admin/customizer-options.php:1142
 msgid "Meta Information location"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1145
+#: ../include/admin/customizer-options.php:1146
 msgid "Top (below title)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1146
+#: ../include/admin/customizer-options.php:1147
 msgid "Bottom (after content)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1153
+#: ../include/admin/customizer-options.php:1154
 msgid "Previous/Next Posts"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1154
+#: ../include/admin/customizer-options.php:1155
 msgid "Display links to Prev/Next Post links at the end of post content."
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1169
+#: ../include/admin/customizer-options.php:1170
 msgid "Contact Form"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1174
+#: ../include/admin/customizer-options.php:1175
 #, php-format
 msgid "This theme comes bundled with CSS required to style %1$sContact-Form-7%2$s forms. Simply install and activate the plugin to add Contact Forms to your pages."
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1182
+#: ../include/admin/customizer-options.php:1183
 msgid "Footer"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1187
+#: ../include/admin/customizer-options.php:1188
 msgid "Footer Layout"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1203
+#: ../include/admin/customizer-options.php:1204
 #, php-format
 msgid "You must first save the changes you make here and refresh this screen for footer columns to appear in the Widgets panel (in customizer).%3$s Once you save the settings here, you can add content to footer columns using the %1$sWidgets Management screen%2$s."
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1209
+#: ../include/admin/customizer-options.php:1210
 msgid "Site Info Text (footer)"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1212
+#: ../include/admin/customizer-options.php:1213
 msgid "<!--default-->"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1214
+#: ../include/admin/customizer-options.php:1215
 #, php-format
 msgid "Text shown in footer. Useful for showing copyright info etc.%3$sUse the %4$s&lt;!--default--&gt;%5$s tag to show the default Info Text.%3$sUse the %4$s&lt;!--year--&gt;%5$s tag to insert the current year.%3$sAlways use %1$sHTML codes%2$s for symbols. For example, the HTML for &copy; is %4$s&amp;copy;%5$s"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1303
+#: ../include/admin/customizer-options.php:1304
 msgid "Frontpage - Header Image"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1308
+#: ../include/admin/customizer-options.php:1309
 msgid "Site Background Color"
 msgstr ""
 
-#: ../include/admin/customizer-options.php:1310
+#: ../include/admin/customizer-options.php:1311
 msgid "Site Background Image"
 msgstr ""
 
@@ -1580,7 +1580,7 @@ msgid "Edit Group"
 msgstr ""
 
 #: ../library/customize/control-group.php:271
-#: ../library/customize/control-group.php:278
+#: ../library/customize/control-group.php:279
 #: ../library/customize/control-icon.php:113
 #: ../library/customize/control-icon.php:120
 msgid "Back"

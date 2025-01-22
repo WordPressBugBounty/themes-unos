@@ -548,7 +548,7 @@ function unos_dynamic_cssrules() {
 					) );
 
 	hoot_add_css_rule( array(
-						'selector'  => '.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt',
+						'selector'  => '.wc-block-components-button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt',
 						'property'  => array(
 							// property  => array( value, idtag, important, typography_reset ),
 							'border-color' => array( $accent_color, 'accent_color' ),
@@ -557,7 +557,7 @@ function unos_dynamic_cssrules() {
 							),
 					) );
 	hoot_add_css_rule( array(
-						'selector'  => '.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover',
+						'selector'  => '.wc-block-components-button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover',
 						'property'  => array(
 							// property  => array( value, idtag, important, typography_reset ),
 							'background'   => array( $accent_font, 'accent_font' ),
