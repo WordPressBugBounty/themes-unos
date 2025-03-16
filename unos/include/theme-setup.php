@@ -92,7 +92,7 @@ if ( ! function_exists( 'unos_hootimport_theme_config' ) ) {
 			'menu_title' => __( 'Import Unos Demo', 'unos' ),
 			'theme_name' => hoot_get_data( 'template_name' ),
 			'theme_version' => hoot_get_data( 'template_version' ),
-			'theme_img' => ( function_exists( 'unos_abouttag' ) ? unos_abouttag( 'fullshot' ) : '' ),
+			'theme_img' => function_exists( 'unos_abouttag' ) ? (  unos_abouttag( 'fullshot' ) !==  unos_abouttag( 'shot' ) ?  unos_abouttag( 'fullshot' ) : '' ) : '',
 		) );
 	}
 }

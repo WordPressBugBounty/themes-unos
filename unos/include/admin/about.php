@@ -81,10 +81,10 @@ function unos_appearance_subpage() {
 					<?php if ( $hasupsell ) : ?>
 					<a class="button button-primary" href="https://wphoot.com/themes/unos/" target="_blank"><span class="dashicons dashicons-dashboard"></span> <?php esc_html_e( 'View Premium', 'unos' ) ?></a>
 					<?php endif; ?>
-					<a class="button" href="https://demo.wphoot.com/JNES@SLUG/" target="_blank"><span class="dashicons dashicons-welcome-view-site"></span> <?php esc_html_e( 'View Demo', 'unos' ) ?></a>
+					<a class="button" href="https://demo.wphoot.com/unos/" target="_blank"><span class="dashicons dashicons-welcome-view-site"></span> <?php esc_html_e( 'View Demo', 'unos' ) ?></a>
 					<a class="button" href="https://wphoot.com/support/unos/" target="_blank"><span class="dashicons dashicons-editor-aligncenter"></span> <?php esc_html_e( 'Documentation', 'unos' ) ?></a>
 					<a class="button" href="https://wphoot.com/support/" target="_blank"><span class="dashicons dashicons-sos"></span> <?php esc_html_e( 'Get Support', 'unos' ) ?></a>
-					<a class="button" href="https://wordpress.org/support/theme/JNES@SLUG/reviews/#new-post" target="_blank"><span class="dashicons dashicons-thumbs-up"></span> <?php esc_html_e( 'Rate Us', 'unos' ) ?></a>
+					<a class="button" href="https://wordpress.org/support/theme/unos/reviews/#new-post" target="_blank"><span class="dashicons dashicons-thumbs-up"></span> <?php esc_html_e( 'Rate Us', 'unos' ) ?></a>
 				</p>
 				<?php do_action( 'unos_theme_after_about_textlinks', $slug ); ?>
 			</div>
@@ -113,7 +113,7 @@ function unos_appearance_subpage() {
 					printf( esc_html__( 'If you have enjoyed using %1$s, you are going to love %2$s%1$s Premium%3$s.%4$sIt is a robust upgrade to %1$s that gives you many useful features.', 'unos' ), $themename, '<strong>', '</strong>', '<br />' );
 					?></p>
 				<p class="hoot-tab-cta centered">
-					<a class="button button-secondary secondary-cta" href="https://demo.wphoot.com/JNES@SLUG/" target="_blank"><span class="dashicons dashicons-welcome-view-site"></span> <?php esc_html_e( 'View Demo Site', 'unos' ) ?></a>
+					<a class="button button-secondary secondary-cta" href="https://demo.wphoot.com/unos/" target="_blank"><span class="dashicons dashicons-welcome-view-site"></span> <?php esc_html_e( 'View Demo Site', 'unos' ) ?></a>
 					<a class="button button-primary primary-cta" href="https://wphoot.com/themes/unos/" target="_blank"><span class="dashicons dashicons-dashboard"></span> <?php
 						/* Translators: 1 is the theme name */
 						printf( esc_html__( 'Buy %1$s Premium', 'unos' ), $themename );
@@ -122,7 +122,7 @@ function unos_appearance_subpage() {
 				<div class="hoot-tab-sub"><div class="hoot-tab-subinner">
 					<?php unos_tabsections( 'features' ); ?>
 					<div class="tabsection hoot-tab-cta centered">
-						<a class="button button-secondary secondary-cta" href="https://demo.wphoot.com/JNES@SLUG/" target="_blank"><span class="dashicons dashicons-welcome-view-site"></span> <?php esc_html_e( 'View Demo Site', 'unos' ) ?></a>
+						<a class="button button-secondary secondary-cta" href="https://demo.wphoot.com/unos/" target="_blank"><span class="dashicons dashicons-welcome-view-site"></span> <?php esc_html_e( 'View Demo Site', 'unos' ) ?></a>
 						<a class="button button-primary primary-cta" href="https://wphoot.com/themes/unos/" target="_blank"><span class="dashicons dashicons-dashboard"></span> <?php
 							/* Translators: 1 is the theme name */
 							printf( esc_html__( 'Buy %1$s Premium', 'unos' ), $themename );
@@ -386,7 +386,7 @@ function unos_upstrings( $string ) {
 	$features[] = array(
 		'name' => esc_html__( 'Unlimites Sliders, Unlimites Slides', 'unos' ),
 		/* Translators: The %s are placeholders for HTML, so the order can't be changed. */
-		'desc' => sprintf( esc_html__( '%1$s Premium allows you to create unlimited sliders with as many slides as you need using the awesome HootKit plugin.%2$s%3$sAdd as Shortcodes%4$sYou can use these sliders on your Frontpage, or add them anywhere using shortcodes - like in your Posts, Sidebars or Footer.', 'unos' ), $themename, '<hr>', '<h4>', '</h4>' ),
+		'desc' => sprintf( esc_html__( '%1$s Premium allows you to create unlimited sliders with as many slides as you need using the awesome HootKit plugin.%2$sSelect from displaying your own images with text to carousels and vertical sliding lists for posts and WooCommerce products.', 'unos' ), $themename, '<hr>' ),
 		'img' => $imagepath . 'premium-sliders.jpg',
 		);
 
@@ -575,7 +575,7 @@ function unos_upstrings( $string ) {
 		'name' => sprintf( esc_html__( 'Install%1$sDemo Content', 'unos' ), '<br />' )
 				. '<small>' . esc_html__( '[ optional ]', 'unos' ) . '</small>',
 		/* Translators: The %s are placeholders for HTML, so the order can't be changed. */
-		'desc' => sprintf( esc_html__( 'Importing demo content is the easiest way to setup your theme and make it look like the %1$sDemo Site%2$s', 'unos' ), '<a href="https://demo.wphoot.com/JNES@SLUG/" target="_blank">', '</a>' )
+		'desc' => sprintf( esc_html__( 'Importing demo content is the easiest way to setup your theme and make it look like the %1$sDemo Site%2$s', 'unos' ), '<a href="https://demo.wphoot.com/unos/" target="_blank">', '</a>' )
 			. '<hr />' . $hootthemeimplink,
 		);
 
